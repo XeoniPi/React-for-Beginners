@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CodeWithRoky</title>
+        <meta name="description" content="A simple portfolio website for CodeWithRoky">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="logo_container">
+                        <img class="logo" src="./assets/img/codewithroky__logo-removebg-preview (1).png" alt="Logo">
+                        <p class="logo_text">Code<span>With</span>Roky</p>
+                    </div>
+                    <ul id="SideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <samp onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></samp>
+                    </ul>
+                    <samp class="toggle" onclick="openMenu()"><i class="fa-solid fa-bars-staggered"></i></samp>
+                </nav>
+            </div>
+
+            <div class="container">
+                <div class="hero-text">
+                    <p>Full Stack Developer & Penetration Tester</p>
+                    <h1>Hi, I'm <span>Abdur Rahman Roky</span><br /> — Cyber Security Enthusiast from Bangladesh</h1>
+                    <p class="tagline">I build secure, scalable web applications and specialize in ethical hacking &
+                        penetration testing.</p>
+                </div>
+            </div>
+        </header>
+        <!-- =========About section =========== -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/assets/img/Image Feb 18, 2026.png" class="img-fluid" alt="user" />
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub_title">About Me</h1>
+                        <p class="info">
+                            I'm Abdur Rahman Roky, a passionate <strong>Full Stack Developer</strong> and aspiring
+                            <strong>Penetration Tester</strong> from Dhaka, Bangladesh.
+                            My journey started with building responsive, pixel‑perfect web applications using
+                            modern technologies like Python, Django, PHP, Oracle, MySQL, React, Bootstrap, and JavaScript.
+                        </p>
+                        <p class="info">
+                            Over time, my curiosity for <strong>Cyber Security</strong> grew stronger. 
+                            I now focus on ethical hacking, vulnerability assessment, and penetration testing 
+                            to help organizations secure their digital assets. 
+                            Combining my development skills with security expertise, I aim to build 
+                            applications that are not only functional but also resilient against cyber threats.
+                        </p>
+                        <p class="info">
+                            My mission is simple: <em>to create secure, scalable, and user‑friendly solutions 
+                            while contributing to a safer digital world.</em>
+                        </p>
+
+                        <div class="tab_titles">
+                            <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab_links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab_contents active_tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span>Full Stack Development</span>
+                                    <br> 
+                                    Experienced in building responsive, scalable web applications using 
+                                    <strong>Python (Django)</strong>, <strong>PHP</strong>, <strong>Oracle</strong>, 
+                                    <strong>MySQL</strong>, <strong>React</strong>, <strong>Bootstrap</strong>, and 
+                                    <strong>JavaScript</strong>. Skilled in designing pixel‑perfect UI with modern frameworks.
+                                </li>
+                                <li>
+                                    <span>Cyber Security & Penetration Testing</span>
+                                    <br> 
+                                    Specialized in <strong>Ethical Hacking</strong>, <strong>Vulnerability Assessment</strong>, and <strong>Penetration Testing</strong>. Hands‑on with tools like <strong>Burp Suite</strong>, <strong>Nmap</strong>, <strong>Metasploit</strong>, and <strong>Kali Linux</strong> for identifying and mitigating security risks.
+                                </li>
+                                <li>
+                                    <span>Database Management</span>
+                                    <br>
+                                    Proficient in <strong>Oracle</strong> and <strong>MySQL</strong> for designing, 
+                                    optimizing, and securing relational databases. Experienced in handling 
+                                    large‑scale data with performance tuning.
+                                </li>
+                                <li>
+                                    <span>Problem Solving & Debugging</span>
+                                    <br>
+                                    Strong analytical skills for troubleshooting complex issues in both  and security contexts. Adept at debugging, code optimization, and secure coding practices.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span>Full Stack Developer (2023-Present)</span>
+                                    <br>Developed responsive and scalable web applications using <strong>Python (Django)</strong>, <strong>PHP</strong>, <strong>React</strong>, <strong>Bootstrap</strong>, and <strong>JavaScript</strong>. Hands‑on experience in designing pixel‑perfect UI, integrating APIs, and managing databases like <strong>Oracle</strong> and <strong>MySQL</strong>. <br><br>
+                                    <em>Projects:</em> Dynamic portfolio websites, real‑time messaging systems, and educational platforms for <b>IEMS</b>.
+                                </li>
+                                <li>
+                                    <span>Cyber Security & Penetration Testing (2025-Present)</span>
+                                    <br> <p>
+                                    Conducted <strong>vulnerability assessments</strong> and <strong>penetration tests</strong> 
+                                    to identify and mitigate security risks. Skilled in using tools like 
+                                    <strong>Burp Suite</strong>, <strong>Nmap</strong>, <strong>Metasploit</strong>, 
+                                    and <strong>Kali Linux</strong> for ethical hacking practices.
+                                    </p>
+                                    <p><em>Focus:</em> Securing web applications, network infrastructure, 
+                                    and educating teams on secure coding practices.</p>
+                                </li>
+                                <li>
+                                    <span>Freelance & Collaborative Projects (2024-Present)</span>
+                                    <br> 
+                                    <p>
+                                    Worked with teams and clients to deliver customized solutions. 
+                                    Experience in collaborating on GitHub, managing sprints, and 
+                                    ensuring both functionality and security in deployed applications.
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab_contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>B.Sc. in Computer Science & Engineering (2021-2025)</span> 
+                                    <br>
+                                    <p>
+                                        Completed Bachelor of Science in Computer Science & Engineering. 
+                                        Focused on software development, algorithms, database systems, and 
+                                        computer networks. Built strong foundations in programming and system design.
+                                        </p>
+                                        <p><em>Institution:</em> University of Scholar's, Dhaka, Bangladesh</p>
+                                        <p><em>Year:</em> 2025</p>
+                                </li>
+                                <li><span>Cyber Security & Ethical Hacking Training</span>
+                                    <br>
+                                    <p>
+                                        Specialized training in <strong>Penetration Testing</strong>, 
+                                        <strong>Ethical Hacking</strong>, and <strong>Network Security</strong>. 
+                                        Hands‑on practice with tools like Kali Linux, Burp Suite, Nmap, and Metasploit.
+                                    </p>
+                                    <p>
+                                        <em>Platform:</em> <a href="https://www.goinnovior.com/" target="_blank" rel="noopener noreferrer">goinnovior</a></p>
+                                    <p>
+                                        <em>Year:</em> December 2025 - Present
+                                    </p>
+                                </li>
+                                <li>
+                                    <span>Continuous Learning</span>
+                                    <br>
+                                    <p>
+                                        Actively pursuing certifications and courses in <strong>Web Application Security</strong>, 
+                                        <strong>Secure Coding Practices</strong>, and <strong>Cloud Security</strong>. 
+                                        Dedicated to staying updated with the latest cyber security trends and technologies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==============Services section============= -->
+        <section id="services">
+            <div class="container">
+                <h1 class="sub_title">My Services</h1>
+                <div class="services_list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Full Stack Web Development</h3>
+                        <p>Building responsive, scalable, and pixel‑perfect web applications.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bug"></i>
+                        <h3>Penetration Testing</h3>
+                        <p>Conducting <strong>ethical hacking</strong> and <strong>vulnerability assessments</strong> to identify and mitigate security risks</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Cyber Security Consulting</h3>
+                        <p>Helping organizations secure their applications and networks.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Database Design & Management</h3>
+                        <p>Designing and optimizing relational databases with <strong>Oracle</strong> and <strong>MySQL</strong>.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-buffer"></i>
+                        <h3>Educational Content Creation</h3>
+                        <p>Creating engaging and informative content to teach web development and cybersecurity concepts.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==============Projects section============= -->
+        <section id="project">
+            <div class="container">
+                <h1 class="sub_title">My Projects</h1>
+                <div class="project_list">
+                    <div class="work">
+                        <img src="/assets/img/project.png" alt="project">
+                        <div class="layer">
+                            <h3>Educational Platform</h3>
+                            <p> Designed modular, culturally sensitive resources for Bengali children learning English. Built with <strong>Django</strong> and <strong>MySQL</strong>, featuring interactive lessons.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/assets/img/portfolio.png" alt="project">
+                        <div class="layer">
+                            <h3>Dynamic Portfolio Website</h3>
+                            <p> A responsive and visually appealing portfolio website built with modern web technologies.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/assets/img/Finix-website.png" alt="project">
+                        <div class="layer">
+                            <h3>Finix Loans & Funding Website</h3>
+                            <p>A professional financial services website template designed for <strong>loan agencies</strong> and <strong>funding companies</strong>. </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="/assets/img/ClassifiedsPlus.png" alt="project">
+                        <div class="layer">
+                            <h3>ClassifiedsPlus – Ads Platform</h3>
+                            <p>A modern classified ads website where users can post, search, and manage listings for products and services.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="/assets/img/health tracker.png" alt="project">
+                        <div class="layer">
+                            <h3>AppAMP Health Tracker</h3>
+                            <p>A health tracking web app demo for monitoring fitness activities, calories, and progress. Designed with responsive UI and modern styling.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </section>
+        <!-- ==============Contact section============= -->
+        <section id="contact">
+            <div class="container">
+                <h1 class="sub_title">Contact Me</h1>
+                <div class="row">
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-paper-plane"></i>abdurrahmanroky.bd@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+880 18667-51015</p>
+                        <p><i class="fa-solid fa-map-marker-alt"></i>Uttar JatraBari, Dhaka, Bangladesh</p>
+                        <div class="social_icons">
+                            <a href="https://www.facebook.com/abdurrahmanroky2.0/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/MDABDURRAHMANR" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/abdurrahmanroky/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/abdur-rahman-roky" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <a href="/assets/img/abdur-rahman-roky.pdf" download class="btn btn-primary">Download
+                            CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="contactForm" name="Portfolio_Contact_form">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <!-- Feedback message -->
+                            <div id="formStatus" style="margin:10px 0; font-weight:bold;"></div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===============Footer section============= -->
+        <footer id="copyright">
+            <div class="container">
+                <p>&copy; 2026 <strong>Code<span>With</span>Roky</strong>. All rights reserved by <span><a
+                            href="https://github.com/XeoniPi" target="_blank">XeoniPi</a></span></p>
+            </div>
+        </footer>
+        <script>
+            var tab_links = document.getElementsByClassName("tab_links");
+            var tab_contents = document.getElementsByClassName("tab_contents");
+
+            function opentab(tabname) {
+                for (tab_link of tab_links) {
+                    tab_link.classList.remove("active_link");
+                }
+                for (tabcontent of tab_contents) {
+                    tabcontent.classList.remove("active_tab");
+                }
+                event.currentTarget.classList.add("active_link");
+                document.getElementById(tabname).classList.add("active_tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("SideMenu");
+
+            function openMenu() {
+                sidemenu.style.right = "0";
+            }
+            function closeMenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxEAgzrT40Z4clocrUJPCk087pk9vpF0Bc2cHQ5T-6qw8I-_SUoV88kP1GJ4PDtN_vb/exec'
+            const form = document.forms['Portfolio_Contact_form']
+            const statusDiv = document.getElementById('formStatus')
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+
+                // Show immediate feedback
+                statusDiv.textContent = "⏳ Sending...";
+                statusDiv.style.color = "white";
+
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        if (response.ok) {
+                            statusDiv.textContent = "✅ Form submitted successfully!";
+                            statusDiv.style.color = "green";
+                            // Reset form after 5 seconds
+                            setTimeout(() => {
+                                form.reset();
+                                statusDiv.textContent = "";
+                            }, 2000);
+                        } else {
+                            statusDiv.textContent = "❌ Submission failed. Please try again.";
+                            statusDiv.style.color = "red";
+                        }
+                        return response.text();
+                    })
+                    .then(data => console.log('Success!', data))
+                    .catch(error => {
+                        statusDiv.textContent = "❌ Error: " + error.message;
+                        statusDiv.style.color = "red";
+                    });
+            });
+        </script>
+    </body>
+
+</html>
