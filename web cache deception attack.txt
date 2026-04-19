@@ -1,0 +1,89 @@
+Identifying Cacheable Endpoints
+When looking for web cache deception bugs, some endpoints are more likely to be vulnerable. Start by checking these common sensitive paths first:
+
+/account
+/profile
+/dashboard
+/settings
+/user
+/admin
+/private
+/my-account
+/user/profile
+/dashboard/image
+/dashboard/profile
+/account/user
+/address
+/account/settings
+/profile/edit
+/user/settings
+/admin/panel
+/private/files
+/my-account/orders
+/user/details
+/dashboard/reports
+/account/profile
+/account/info
+/profile/view
+/admin/settings
+/private/data
+/my-account/settings
+/user/account
+
+These paths typically contain user-specific information and are prime targets for cache deception attacks.
+
+
+File Extensions to Test
+When testing for cache deception, append various file extensions to sensitive endpoints to make them appear as static resources:
+
+.css
+.js
+.svg
+.asp
+.aspx
+.atom
+.bak
+.bin
+.cgi
+.csv
+.do
+.eot
+.exe
+.fake.js
+.gif
+.html
+.ico
+.jpg
+.jpeg
+.json
+.jsp
+.mp3
+.mp4
+.old
+.pdf
+.php
+.png
+.rss
+.tar.gz
+.tmp
+.ttf
+.txt
+.webm
+.woff
+.woff2
+.xml
+.zip
+.7z
+
+Add the above extensions to dynamic endpoints, for example:
+
+/dashboard.png
+/user.js
+/admin.css
+/orders.jpg
+
+# Try fake directories:
+ /admin.css/login
+ /account.js/test
+ /settings/fake.js
+ /orders/test/style.css
